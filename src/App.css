@@ -1,4 +1,45 @@
 .App {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+  background-color: #051C2E;
+  overflow-x: hidden;
+}
+
+.footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  display: inline-block;
+  justify-content: 'center';
+}
+
+.social-icons {
+  margin: 20px 50px;
   text-align: center;
 }
+
+.not-found {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  background-color: #0a0a0a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 

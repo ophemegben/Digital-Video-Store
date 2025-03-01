@@ -1,0 +1,504 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "title": "Black & White Cinema",
+      "image": "/images/banner.jpg",
+      "description": "Mix & Match 2 for $9.99"
+    },
+    {
+      "id": 2,
+      "title": "Top Hits of 2024",
+      "image": "/images/banner.jpg",
+      "description": "Catch the latest blockbusters"
+    }
+  ],
+  "featuredMovies": [
+    {
+      "id": 1,
+      "title": "Greenland",
+      "image": "/images/movie.jpg",
+      "label": "Early Access"
+    },
+    {
+      "id": 2,
+      "title": "Freaky",
+      "image": "/images/movie.jpg",
+      "label": "Early Access"
+    },
+    {
+      "id": 3,
+      "title": "News of the World",
+      "image": "/images/movie.jpg",
+      "label": "Theater at Home"
+    },
+    {
+      "id": 4,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "You Know the Vibes"
+    },
+    {
+      "id": 5,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 6,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 7,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 8,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 9,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 10,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    }
+  ],
+  "featuredShows": [
+    {
+      "id": 1,
+      "title": "Greenland",
+      "image": "/images/Movie6.jpg",
+      "label": "Early Access"
+    },
+    {
+      "id": 2,
+      "title": "Freaky",
+      "image": "/images/Movie4.jpg",
+      "label": "Early Access"
+    },
+    {
+      "id": 3,
+      "title": "News of the World",
+      "image": "/images/movie.jpg",
+      "label": "Theater at Home"
+    },
+    {
+      "id": 4,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "You Know the Vibes"
+    },
+    {
+      "id": 5,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 6,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 7,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 8,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 9,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    },
+    {
+      "id": 10,
+      "title": "Wild Mountain Thyme",
+      "image": "/images/movie.jpg",
+      "label": "Dunno what to say"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/banner.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 2,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 3,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 4,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 5,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 6,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 7,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 8,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 9,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 10,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 11,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 12,
+      "title": "Inception",
+      "genre": "Action | Sci-Fi",
+      "year": 2010,
+      "duration": 148,
+      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "details": {
+        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "director": "Christopher Nolan",
+        "releaseDate": "July 16, 2010",
+        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      },
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    }
+  ],
+  "tv-shows": [
+    {
+      "id": 1,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 2,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 3,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 4,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 5,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 6,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 7,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 8,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 9,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 10,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 11,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    },
+    {
+      "id": 12,
+      "title": "Dunes 2",
+      "genre": "Adventure | Animation",
+      "year": 2020,
+      "duration": 91,
+      "synopsis": "Poppy and Branch discover that they are but one of six different Troll tribes scattered over six different lands...",
+      "smallPoster": "/images/movie.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 3.99,
+      "buyPrice": 14.99
+    }
+  ]
+}
