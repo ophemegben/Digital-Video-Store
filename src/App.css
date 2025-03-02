@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0; 
-  background-color: #051C2E;
+  background-color: #03101a; /*old color 051C2E. Also change in slide overlay*/
   overflow-x: hidden;
 }
 
@@ -40,6 +40,5 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 

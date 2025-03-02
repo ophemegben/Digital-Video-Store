@@ -1,20 +1,47 @@
 .movie-listing {
-    padding: 20px;
+    margin: 0 20px;
     justify-content: center;
+    align-items: center;
   }
   
-  .movie-card {
-    height: 250px;
-    background-color: #1a1a1a;
+  .listing-card {   
+    max-width:100%;
+    min-height: 300px;
+    overflow: hidden;
+    margin: 15px;
   }
-  
-  .movie-image {
+
+  .listing-card:hover {   
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+  }
+
+  .listing-card-content {
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially hidden */
+    position: absolute;
+    height: 50px;
+    bottom: 0; /* Stick to the bottom */
+    left: 0;
     width: 100%;
-    height: 300px; /* Adjust height as needed */
+    background-color:#000000D9; /* Semi-transparent black */
+    color: #fff;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .listing-card:hover .listing-card-content {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .listing-image {
+    max-height: 300px;
     object-fit: cover;
   }
 
   .header-custom {
     padding-top: 20px;
-    color: #fff;    
+    color: #fff;  
+    padding-bottom: 50px;  
   }

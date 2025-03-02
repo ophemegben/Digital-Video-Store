@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "../css/Home.css";
+import zIndex from '@mui/material/styles/zIndex';
 
 const Hero = () => {
   const [banners, setBanners] = useState([]);
@@ -15,13 +16,15 @@ const Hero = () => {
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    nextArrow: <div className='slick-next'>›</div>,
+    prevArrow: <div className='slick-prev'>‹</div>
   };
 
   return (

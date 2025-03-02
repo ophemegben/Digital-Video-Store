@@ -11,7 +11,7 @@ const Header = () => {
     <AppBar
       position="sticky"
       sx={{
-        background: "linear-gradient(to right, #00000000 50%, #000000D9)"
+        background: "linear-gradient(to right, #00000000 50%, #000000D9)",
       }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>

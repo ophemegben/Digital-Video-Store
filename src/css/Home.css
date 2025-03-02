@@ -15,6 +15,7 @@
     width: 100%;
     max-height: 500px;
     object-fit: cover;
+    z-index: 0;
   }
 
   .slide-overlay {
@@ -23,71 +24,181 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #00000000 50%, #051C2E 95%);
-    /*background: #00000080; /* Semi-transparent black background */
+    background: linear-gradient(to bottom, #00000000 50%, #03101a 95%);
     display: flex;
+    z-index: 1;
   }
   
   .slide-content {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #00000080;
     padding: 15px;
     border-radius: 5px;
     max-width: 400px;
+    z-index: 2;
+    margin-left: 35px;
   }
 
+  /*still figuring this out. It's for the arrows*/
+  .slick-next{
+    z-index: 4;
+  }
+  
+  .slick-prev{
+    z-index: 4;
+  }
+  /*End of arrows*/
+
+
+
+   /*MOVIE CARD SECTION. This section is where the card content is made visible on movie card hover*/
   .featured-movies {
-    padding: 20px 50px;
-    color: #fff;    
-  }
-  
-  .movies-container {
-    display: flex;
-    overflow-x: auto;
-    padding: 10px 0;
-  }
-  
+    padding: 10px 50px;
+    color: #fff; 
+  }  
+ 
   .movie-card {
-    max-width:90%;
-    height: auto;
-    border-radius: 0px !important;
+    position: relative;
+    max-width: 90%;
+    min-height: 250px;
     overflow: hidden;
+    margin: 10px;
   }
-
+  
+  .movie-card:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.08);
+  }
+  
   .card-content {
-    background-color: #000000;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially hidden */
+    position: absolute;
+    height: 50px;
+    bottom: 0; /* Stick to the bottom */
+    left: 0;
+    width: 100%;
+    background-color:#000000D9; /* Semi-transparent black */
     color: #fff;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+  
+  .movie-card:hover .card-content {
+    opacity: 1;
+    visibility: visible; /* Show card content on hover */
   }
   
   .movie-image {
     width: 100%;
+    min-height: 250px;
     object-fit: cover;
   }
 
-  .content-section{    
-    width: 100%;
-    padding: 20px 50px;
-    color: #fff;  
+
+  /**CONTENT SECTION*/
+  .content-section{   
+    display: flex; 
+    width: 75%;
+    margin: 50px auto 70px auto;
+    justify-content:center;
+    color: #333;  
+    height: auto;
+    background: linear-gradient(45deg, 
+    rgba(0, 255, 255, 0.8) 0%,        /* Bright Cyan with 80% opacity */
+    rgba(0, 204, 255, 0.8) 10%,       /* Brighter Blue with 80% opacity */
+    rgba(102, 255, 255, 0.8) 20%,     /* Brighter Light Cyan with 80% opacity */
+    rgba(0, 255, 204, 0.8) 30%,       /* Brighter Light Teal with 80% opacity */
+    rgba(102, 255, 204, 0.8) 40%,     /* Brighter Light Mint with 80% opacity */
+    rgba(0, 204, 255, 0.8) 50%,       /* Brighter Lighter Blue with 80% opacity */
+    rgba(102, 204, 255, 0.8) 60%,     /* Brighter Soft Blue with 80% opacity */
+    rgba(0, 255, 255, 0.8) 70%,       /* Brighter Cyan with 80% opacity */
+    rgba(102, 255, 255, 0.8) 80%);    /* Brighter Light Cyan with 80% opacity */
+    background-size: 10px 10px;
+    animation: fadeIn 1.5s ease-out; /* Add fade-in effect */
+  }
+
+  /*Image Animation*/
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End at the original position */
+    }
+  }
+
+  .content-image-container{
     height: 200px;
+    width: 100%;
+    opacity: 0; /* Start images hidden */
+    animation: slideInFromRight 1s ease-out forwards;
+    animation-delay: 0.8s;
+  }
+
+  .content-image{    
+    width: 100%;
+    height: 200px;
+    max-height: 100%;
+    object-fit: cover;
+    transform: skew(-15deg);
+    transition: transform 0.3s ease; /* Smooth transform effect */
+  }
+
+  @media (max-width: 768px) {
+    .content-image {
+      transform: skew(0deg); /* Remove skew on smaller screens */
+    }
+  }
+
+
+  /*Text Animation*/
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start 20px below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+    }
   }
 
   .content-text{
-    font-size: 18px;
+    padding: 20px;
+  }  
+  
+  .content-text1{ 
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards; /* Animation for text */
+    animation-delay: 0.2s;
+    font-size: 28px !important;
     font-weight: bold;
-    color: #FFE4C4;
+    color: #003371;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
   }
 
   .content-text2{
-    font-size: 38px !important;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards; /* Animation for text */
+    animation-delay: 0.4s;
+    font-size: 40px !important;
     font-weight: bold;
-    color: #FFE4C4;
+    color: #ffffff;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
   }
 
   .content-text3{
-    font-size: 22px !important;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards; /* Animation for text */
+    animation-delay: 0.6s;
+    font-size: 32px !important;
     font-weight: bold;
-    color: #FFF;
+    color: #bd0e0ed9;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
   }
 

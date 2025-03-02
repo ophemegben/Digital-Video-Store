@@ -30,7 +30,7 @@
 
 .small-poster-card {
   max-width: 200px;
-  margin-right: 20px;
+  margin-left: 60px;
 }
 
 .small-poster {
@@ -66,4 +66,5 @@
 .details-content {
   text-align: left;
   max-width: 600px;
+  margin-left: 20px;
 }
