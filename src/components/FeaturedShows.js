@@ -28,13 +28,41 @@ const FeaturedShows = () => {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 3,
-    nextArrow: <div style={{ fontSize: '30px', color: '#fff' }}>›</div>,
-    prevArrow: <div style={{ fontSize: '30px', color: '#fff' }}>‹</div>,
+    responsive: [
+      {
+        breakpoint: 1200, // Large screens
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 900, // Medium screens
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 600, // Small screens
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // Extra small screens
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <Box className="featured-movies">
-      <Typography variant="h6" marginLeft="10px">
+      <Typography variant="h6" marginLeft="10px" className='section-title'>
         Featured Shows
         <Link to="/tv-shows"
           style={{
@@ -45,7 +73,7 @@ const FeaturedShows = () => {
             gap: "5px",
             color: "#fff"
           }}>
-          See more <ArrowForwardIosIcon />
+          See more <ArrowForwardIosIcon fontSize="small"/>
         </Link>
       </Typography>
       <Slider {...settings}>

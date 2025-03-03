@@ -9,7 +9,6 @@ import LoginPage from './components/LoginPage';
 import RegistrationPage from './components/RegistrationPage';
 import NotFound from './components/404';
 import Layout from './components/Layout';
-
 import './App.css';
 
 function App() {

@@ -2,8 +2,27 @@ import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "../css/Home.css";
-import zIndex from '@mui/material/styles/zIndex';
+
+const CustomNextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div className="custom-arrow custom-next" onClick={onClick}>
+      <ArrowForwardIosIcon />
+    </div>
+  );
+};
+
+const CustomPrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div className="custom-arrow custom-prev" onClick={onClick}>
+      <ArrowBackIosIcon />
+    </div>
+  );
+};
 
 const Hero = () => {
   const [banners, setBanners] = useState([]);
@@ -23,8 +42,8 @@ const Hero = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    nextArrow: <div className='slick-next'>›</div>,
-    prevArrow: <div className='slick-prev'>‹</div>
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />
   };
 
   return (

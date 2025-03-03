@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Box, Typography, Button, Card, CardMedia, Tabs, Tab, IconButton } from '@mui/material';
+import { Box, Typography, Button, Card, CardMedia, Tabs, Tab } from '@mui/material';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Movie from '@mui/icons-material/Movie';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
@@ -78,7 +78,7 @@ const ShowDetailsPage = () => {
                                     <strong>Release Date:</strong> {show.details.releaseDate}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Awards:</strong> {show.details.awards}
+                                    <strong>Episodes:</strong> {show.details.episodes}
                                 </Typography>
                             </Box>
                         )}

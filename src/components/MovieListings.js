@@ -20,10 +20,10 @@ const MovieListings = () => {
 
   return (
     <div className='header-custom'>
-      <Typography variant="h5" gutterBottom sx={{ paddingLeft: "65px" }}>Movies</Typography>
-      <Grid2 container spacing={1} className="movie-listing">
+      <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', margin: '0 auto' }}>Movies</Typography>
+      <Grid2 container spacing={2} className="movie-listing">
         {movies.map(movie => (
-          <Grid2 size xs={12} sm={6} md={4} lg={3} key={movie.id}>
+          <Grid2 size={{xs:12, sm:6, md:4, lg:2}} key={movie.id}>
             <Card className="listing-card">
               <CardActionArea onClick={() => handleCardClick(movie.id)}>
                 <CardMedia

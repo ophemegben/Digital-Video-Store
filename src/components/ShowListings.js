@@ -8,7 +8,7 @@ const ShowListings = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:3001/movies')
+    fetch('http://localhost:3001/tv-shows')
       .then(response => response.json())
       .then(data => setShows(data))
       .catch(error => console.error('Error fetching movies:', error));
@@ -20,10 +20,10 @@ const ShowListings = () => {
 
   return (
     <div className='header-custom'>
-      <Typography variant="h5" gutterBottom sx={{ paddingLeft: "65px" }}>TV Shows</Typography>
-      <Grid2 container spacing={1} className="movie-listing">
+      <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', margin: '0 auto' }}>TV Shows</Typography>
+      <Grid2 container spacing={2} className="movie-listing">
         {shows.map(show => (
-          <Grid2 size xs={12} sm={6} md={4} lg={3} key={show.id}>
+          <Grid2 size={{xs:12, sm:6, md:4, lg:2}} key={show.id}>
             <Card className="listing-card">
               <CardActionArea onClick={() => handleCardClick(show.id)}>
                 <CardMedia

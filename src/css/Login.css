@@ -1,0 +1,116 @@
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+    }
+
+    .formContainer
+    {
+      width: 320px;
+      background-color: white;
+      padding: 24px;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    .inputGroup {
+      margin-bottom: 16px,
+    }
+
+    .input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    .forgotPassword {
+      margin-bottom: 16px;
+    }
+
+    .forgotPasswordLink {
+      color: #0078d7;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .signInButton {
+      width: 100%;
+      padding: 10px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .createAccountButton {
+      width: 100%;
+      padding: 10px;
+      background-color: white;
+      color: #0078d7;
+      border: 1px solid #0078d7;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .thirdPartyContainer {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .walmartButton {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .facebookButton {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background-color: #3b5998;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .iconContainer {
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+    }
+  

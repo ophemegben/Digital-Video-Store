@@ -1,14 +1,15 @@
 .movie-listing {
-    margin: 0 20px;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
+    max-width: 90%;
   }
   
   .listing-card {   
     max-width:100%;
-    min-height: 300px;
     overflow: hidden;
     margin: 15px;
+    position: relative;
   }
 
   .listing-card:hover {   
@@ -36,8 +37,10 @@
   }
 
   .listing-image {
-    max-height: 300px;
+    width: 100%;
+    min-height: 300px;
     object-fit: cover;
+    aspect-ratio: 2/3;
   }
 
   .header-custom {

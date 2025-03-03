@@ -2,815 +2,1049 @@
   "banners": [
     {
       "id": 1,
-      "title": "Black & White Cinema",
-      "image": "/images/banner.jpg",
-      "description": "Mix & Match 2 for $9.99"
+      "title": "Gladiator II",
+      "image": "/images/Gladiator_hero.jpg",
+      "description": "Action | Drama"
     },
     {
       "id": 2,
-      "title": "Top Hits of 2024",
-      "image": "/images/banner.jpg",
-      "description": "Catch the latest blockbusters"
+      "title": "Dune: Part Two",
+      "image": "/images/Dune2_hero.jpg",
+      "description": "Sci-Fi | Adventure"
+    },
+    {
+      "id": 3,
+      "title": "Wicked",
+      "image": "/images/Wicked_hero.jpg",
+      "description": "Music | Fantasy | Drama"
+    },
+    {
+      "id": 4,
+      "title": "Deadpool & Wolverine",
+      "image": "/images/Deadpool-Wolverine_hero.jpg",
+      "description": "Comedy | Action"
+    },
+    {
+      "id": 5,
+      "title": "Shogun",
+      "image": "/images/Shogun_hero.jpg",
+      "description": "Historical Drama"
     }
   ],
   "featuredMovies": [
     {
       "id": 1,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Dune: Part Two",
+      "genre": "Sci-Fi | Adventure",
+      "year": 2024,
+      "duration": 166,
+      "overview": "Paul Atreides unites with Chani and the Fremen as he seeks revenge against those who destroyed his family.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Timothée Chalamet, Zendaya, Rebecca Ferguson",
+        "director": "Denis Villeneuve",
+        "releaseDate": "March 1, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
-      "largePoster": "/images/banner.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "smallPoster": "/images/Dune_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 2,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Deadpool & Wolverine",
+      "genre": "Action | Comedy",
+      "year": 2024,
+      "duration": 120,
+      "overview": "Deadpool joins forces with Wolverine in a new adventure packed with fourth-wall-breaking humor.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Ryan Reynolds, Hugh Jackman, Morena Baccarin",
+        "director": "Shawn Levy",
+        "releaseDate": "July 26, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/deadpool-wolverine_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 3,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Oppenheimer",
+      "genre": "Biography | Drama | History",
+      "year": 2023,
+      "duration": 180,
+      "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "cast": "Cillian Murphy, Robert Downey Jr., Florence Pugh",
         "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "releaseDate": "July 21, 2023",
+        "awards": "Multiple Academy Awards"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/oppenheimer_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 4,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Barbie",
+      "genre": "Adventure | Comedy",
+      "year": 2023,
+      "duration": 114,
+      "overview": "Barbie embarks on a journey of self-discovery after being expelled from Barbieland for being less than perfect.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Margot Robbie, Ryan Gosling, Will Ferrell",
+        "director": "Greta Gerwig",
+        "releaseDate": "July 21, 2023",
+        "awards": "Golden Globe Award for Cinematic and Box Office Achievement"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/barbie_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 5,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Killers of the Flower Moon",
+      "genre": "Crime | Drama",
+      "year": 2023,
+      "duration": 206,
+      "overview": "Members of the Osage tribe in the United States are murdered under mysterious circumstances in the 1920s, sparking a major FBI investigation.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Leonardo DiCaprio, Robert De Niro, Lily Gladstone",
+        "director": "Martin Scorsese",
+        "releaseDate": "October 20, 2023",
+        "awards": "AFI Movie of the year"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/killers_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 6,
-      "title": "Inception",
+      "title": "Furiosa: A Mad Max Saga",
       "genre": "Action | Sci-Fi",
-      "year": 2010,
+      "year": 2024,
       "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "overview": "A prequel focusing on the origins of Furiosa before she teamed up with Mad Max in 'Fury Road'.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Anya Taylor-Joy, Chris Hemsworth, Tom Burke",
+        "director": "George Miller",
+        "releaseDate": "May 24, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/furiosa_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 7,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Inside Out 2",
+      "genre": "Animation | Adventure",
+      "year": 2024,
+      "duration": 100,
+      "overview": "Riley's emotions face new challenges as she navigates her teenage years.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Amy Poehler, Phyllis Smith, Lewis Black",
+        "director": "Kelsey Mann",
+        "releaseDate": "June 14, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/inside-out_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 8,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "The Idea of You",
+      "genre": "Romantic Comedy | Drama",
+      "year": 2024,
+      "duration": 116,
+      "overview": "A 40-year-old single mom begins an unexpected romance with 24-year-old Hayes Campbell, the lead singer of the hottest boy band on the planet.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Anne Hathaway, Nicholas Galitzine",
+        "director": "Michael Showalter",
+        "releaseDate": "May 2, 2024",
+        "awards": "None"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/the-idea-of-you_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 9,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
+      "title": "Gladiator II",
+      "genre": "Action | Drama",
+      "year": 2024,
       "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "overview": "Years after witnessing the death of Maximus, Lucius is forced into the Colosseum after his home is conquered by tyrannical emperors. With rage in his heart and the future of the Empire at stake, Lucius must find strength and honor to restore Rome's glory.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Paul Mescal, Denzel Washington, Pedro Pascal, Connie Nielsen",
+        "director": "Ridley Scott",
+        "releaseDate": "November 22, 2024",
+        "awards": "None"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/gladiator_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 10,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Woman of the Hour",
+      "genre": "Crime | Thriller",
+      "year": 2024,
+      "duration": 94,
+      "overview": "In the 1970s, aspiring actress Sheryl Bradshaw appears on a popular television dating show, unknowingly choosing charming bachelor Rodney Alcala, who hides a deadly secret.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Anna Kendrick, Daniel Zovatto, Nicolette Robinson, Tony Hale",
+        "director": "Anna Kendrick",
+        "releaseDate": "October 18, 2024",
+        "awards": "None"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/woman_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     }
   ],
   "featuredShows": [
     {
-    "id": 1,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+      "id": 1,
+      "title": "Breaking Bad",
+      "genre": "Crime | Thriller",
+      "year": 2008,
+      "duration": 47,
+      "overview": "A high school chemistry teacher turned methamphetamine producer partners with a former student, leading to a life of crime and moral dilemmas.",
+      "details": {
+        "cast": "Bryan Cranston, Aaron Paul, Anna Gunn, Bob Odenkirk",
+        "director": "Vince Gilligan",
+        "releaseDate": "January 20, 2008",
+        "episodes": "62"
+      },
+      "smallPoster": "/images/breaking-bad_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/banner.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 2,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+    {
+      "id": 2,
+      "title": "Chernobyl",
+      "genre": "Drama | History",
+      "year": 2019,
+      "duration": 60,
+      "overview": "A dramatization of the 1986 nuclear disaster in Soviet Ukraine, highlighting the events and aftermath.",
+      "details": {
+        "cast": "Jared Harris, Stellan Skarsgård, Emily Watson",
+        "director": "Johan Renck",
+        "releaseDate": "May 6, 2019",
+        "episodes": "5"
+      },
+      "smallPoster": "/images/chernobyl_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 3,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+    {
+      "id": 3,
+      "title": "The Wire",
+      "genre": "Crime | Drama",
+      "year": 2002,
+      "duration": 58,
+      "overview": "An exploration of Baltimore's society, focusing on the city's narcotics scene through the eyes of law enforcement and drug dealers.",
+      "details": {
+        "cast": "Dominic West, Lance Reddick, Sonja Sohn, Idris Elba",
+        "director": "David Simon",
+        "releaseDate": "June 2, 2002",
+        "episodes": "60"
+      },
+      "smallPoster": "/images/the-wire_small_poster.webp",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 4,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+    {
+      "id": 4,
+      "title": "Avatar: The Last Airbender",
+      "genre": "Animation | Adventure",
+      "year": 2005,
+      "duration": 24,
+      "overview": "A young hero must master all four elements to bring peace to a war-torn world.",
+      "details": {
+        "cast": "Zach Tyler Eisen, Mae Whitman, Dante Basco, Jack DeSena",
+        "director": "Michael Dante DiMartino, Bryan Konietzko",
+        "releaseDate": "February 21, 2005",
+        "episodes": "61"
+      },
+      "smallPoster": "/images/avatar_small_poster.webp",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 5,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+    {
+      "id": 5,
+      "title": "Stranger Things",
+      "genre": "Drama | Fantasy | Horror",
+      "year": 2016,
+      "duration": 50,
+      "overview": "A group of young friends in the 1980s uncover supernatural mysteries, secret government experiments, and a parallel dimension called the Upside Down.",
+      "details": {
+        "cast": "Winona Ryder, David Harbour, Millie Bobby Brown, Finn Wolfhard",
+        "director": "The Duffer Brothers",
+        "releaseDate": "July 15, 2016",
+        "episodes": "34"
+      },
+      "smallPoster": "/images/stranger-things_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 6,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+    {
+      "id": 6,
+      "title": "Game of Thrones",
+      "genre": "Action | Drama",
+      "year": 2011,
+      "duration": 57,
+      "overview": "Nine noble families wage war against each other in a bid for control over the Seven Kingdoms, while an ancient enemy returns to threaten them all.",
+      "details": {
+        "cast": "Emilia Clarke, Kit Harington, Peter Dinklage, Lena Headey",
+        "director": "David Benioff, D.B. Weiss",
+        "releaseDate": "April 17, 2011",
+        "episodes": "73"
+      },
+      "smallPoster": "/images/game-of-thrones_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 7,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+    {
+      "id": 7,
+      "title": "The Walking Dead",
+      "genre": "Drama | Horror",
+      "year": 2010,
+      "duration": 45,
+      "overview": "In a world devastated by a zombie apocalypse, survivors struggle to stay alive while facing both the undead and other desperate humans.",
+      "details": {
+        "cast": "Andrew Lincoln, Norman Reedus, Melissa McBride, Lauren Cohan",
+        "director": "Frank Darabont",
+        "releaseDate": "October 31, 2010",
+        "episodes": "177"
+      },
+      "smallPoster": "/images/walking-dead_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 8,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+    {
+      "id": 8,
+      "title": "The Sopranos",
+      "genre": "Crime | Drama",
+      "year": 1999,
+      "duration": 55,
+      "overview": "New Jersey mob boss Tony Soprano struggles to manage his family and criminal organization while seeking therapy for his anxiety and panic attacks.",
+      "details": {
+        "cast": "James Gandolfini, Edie Falco, Michael Imperioli, Lorraine Bracco",
+        "director": "David Chase",
+        "releaseDate": "January 10, 1999",
+        "episodes": "86"
+      },
+      "smallPoster": "/images/the-sopranos_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 9,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+    {
+      "id": 9,
+      "title": "The Simpsons",
+      "genre": "Animation | Comedy",
+      "year": 1989,
+      "duration": 22,
+      "overview": "The satirical adventures of the Simpson family in the fictional town of Springfield, tackling social and cultural issues with humor and wit.",
+      "details": {
+        "cast": "Dan Castellaneta, Nancy Cartwright, Harry Shearer, Julie Kavner",
+        "director": "Matt Groening",
+        "releaseDate": "December 17, 1989",
+        "episodes": "750+"
+      },
+      "smallPoster": "/images/the-simpsons_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  },
-  {
-    "id": 10,
-    "title": "Inception",
-    "genre": "Action | Sci-Fi",
-    "year": 2010,
-    "duration": 148,
-    "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
-    "details": {
-      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-      "director": "Christopher Nolan",
-      "releaseDate": "July 16, 2010",
-      "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
-    },
-    "smallPoster": "/images/movie.jpg",
-    "largePoster": "/images/Movie4.jpg",
-    "rentPrice": 3.99,
-    "buyPrice": 14.99
-  }
+    {
+      "id": 10,
+      "title": "Grey's Anatomy",
+      "genre": "Drama | Romance",
+      "year": 2005,
+      "duration": 43,
+      "overview": "A medical drama following the personal and professional lives of doctors at Grey Sloan Memorial Hospital, as they navigate relationships, careers, and life-or-death situations.",
+      "details": {
+        "cast": "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Kevin McKidd",
+        "director": "Shonda Rhimes",
+        "releaseDate": "March 27, 2005",
+        "episodes": "420+"
+      },
+      "smallPoster": "/images/greys-anatomy_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    }
   ],
   "movies": [
     {
       "id": 1,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Dune: Part Two",
+      "genre": "Sci-Fi | Adventure",
+      "year": 2024,
+      "duration": 166,
+      "overview": "Paul Atreides unites with Chani and the Fremen as he seeks revenge against those who destroyed his family.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Timothée Chalamet, Zendaya, Rebecca Ferguson",
+        "director": "Denis Villeneuve",
+        "releaseDate": "March 1, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
-      "largePoster": "/images/banner.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "smallPoster": "/images/Dune_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 2,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Deadpool & Wolverine",
+      "genre": "Action | Comedy",
+      "year": 2024,
+      "duration": 120,
+      "overview": "Deadpool joins forces with Wolverine in a new adventure packed with fourth-wall-breaking humor.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Ryan Reynolds, Hugh Jackman, Morena Baccarin",
+        "director": "Shawn Levy",
+        "releaseDate": "July 26, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/deadpool-wolverine_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 3,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Oppenheimer",
+      "genre": "Biography | Drama | History",
+      "year": 2023,
+      "duration": 180,
+      "overview": "The story of J. Robert Oppenheimer's role in the development of the atomic bomb during World War II.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+        "cast": "Cillian Murphy, Robert Downey Jr., Florence Pugh",
         "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "releaseDate": "July 21, 2023",
+        "awards": "Multiple Academy Awards"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/oppenheimer_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 4,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Barbie",
+      "genre": "Adventure | Comedy",
+      "year": 2023,
+      "duration": 114,
+      "overview": "Barbie embarks on a journey of self-discovery after being expelled from Barbieland for being less than perfect.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Margot Robbie, Ryan Gosling, Will Ferrell",
+        "director": "Greta Gerwig",
+        "releaseDate": "July 21, 2023",
+        "awards": "Golden Globe Award for Cinematic and Box Office Achievement"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/barbie_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 5,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Killers of the Flower Moon",
+      "genre": "Crime | Drama",
+      "year": 2023,
+      "duration": 206,
+      "overview": "Members of the Osage tribe in the United States are murdered under mysterious circumstances in the 1920s, sparking a major FBI investigation.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Leonardo DiCaprio, Robert De Niro, Lily Gladstone",
+        "director": "Martin Scorsese",
+        "releaseDate": "October 20, 2023",
+        "awards": "AFI Movie of the year"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/killers_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 6,
-      "title": "Inception",
+      "title": "Furiosa: A Mad Max Saga",
       "genre": "Action | Sci-Fi",
-      "year": 2010,
+      "year": 2024,
       "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "overview": "A prequel focusing on the origins of Furiosa before she teamed up with Mad Max in 'Fury Road'.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Anya Taylor-Joy, Chris Hemsworth, Tom Burke",
+        "director": "George Miller",
+        "releaseDate": "May 24, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/furiosa_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 7,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Inside Out 2",
+      "genre": "Animation | Adventure",
+      "year": 2024,
+      "duration": 100,
+      "overview": "Riley's emotions face new challenges as she navigates her teenage years.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Amy Poehler, Phyllis Smith, Lewis Black",
+        "director": "Kelsey Mann",
+        "releaseDate": "June 14, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/inside-out_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 8,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "The Idea of You",
+      "genre": "Romantic Comedy | Drama",
+      "year": 2024,
+      "duration": 116,
+      "overview": "A 40-year-old single mom begins an unexpected romance with 24-year-old Hayes Campbell, the lead singer of the hottest boy band on the planet.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Anne Hathaway, Nicholas Galitzine",
+        "director": "Michael Showalter",
+        "releaseDate": "May 2, 2024",
+        "awards": "None"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/the-idea-of-you_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 9,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
+      "title": "Gladiator II",
+      "genre": "Action | Drama",
+      "year": 2024,
       "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "overview": "Years after witnessing the death of Maximus, Lucius is forced into the Colosseum after his home is conquered by tyrannical emperors. With rage in his heart and the future of the Empire at stake, Lucius must find strength and honor to restore Rome's glory.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Paul Mescal, Denzel Washington, Pedro Pascal, Connie Nielsen",
+        "director": "Ridley Scott",
+        "releaseDate": "November 22, 2024",
+        "awards": "None"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/gladiator_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 10,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Woman of the Hour",
+      "genre": "Crime | Thriller",
+      "year": 2024,
+      "duration": 94,
+      "overview": "In the 1970s, aspiring actress Sheryl Bradshaw appears on a popular television dating show, unknowingly choosing charming bachelor Rodney Alcala, who hides a deadly secret.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Anna Kendrick, Daniel Zovatto, Nicolette Robinson, Tony Hale",
+        "director": "Anna Kendrick",
+        "releaseDate": "October 18, 2024",
+        "awards": "None"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/woman_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 11,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Kung Fu Panda 4",
+      "genre": "Animation | Adventure | Comedy",
+      "year": 2024,
+      "duration": 95,
+      "overview": "Po embarks on a new adventure, facing challenges that test his kung fu skills and his role as the Dragon Warrior.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Jack Black, Angelina Jolie, Dustin Hoffman",
+        "director": "Mike Mitchell",
+        "releaseDate": "March 8, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/kung-fu-panda_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 12,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Godzilla x Kong: The New Empire",
+      "genre": "Action | Sci-Fi | Thriller",
+      "year": 2024,
+      "duration": 130,
+      "overview": "Godzilla and King Kong team up to face a new threat endangering humanity.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Alexander Skarsgård, Millie Bobby Brown, Rebecca Hall",
+        "director": "Adam Wingard",
+        "releaseDate": "March 29, 2024",
+        "awards": "TBD"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/godzilla_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 13,
+      "title": "Bob Marley: One Love",
+      "genre": "Biography | Drama | Music",
+      "year": 2024,
+      "duration": 140,
+      "overview": "A look into the life and legacy of reggae legend Bob Marley.",
+      "details": {
+        "cast": "Kingsley Ben-Adir, Lashana Lynch, James Norton",
+        "director": "Reinaldo Marcus Green",
+        "releaseDate": "February 14, 2024",
+        "awards": "TBD"
+      },
+      "smallPoster": "/images/bob-marley_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 14,
+      "title": "The Fall Guy",
+      "genre": "Action | Drama",
+      "year": 2024,
+      "duration": 120,
+      "overview": "A stuntman returns to the industry, only to find himself in the middle of a real-life adventure.",
+      "details": {
+        "cast": "Ryan Gosling, Emily Blunt, Aaron Taylor-Johnson",
+        "director": "David Leitch",
+        "releaseDate": "May 3, 2024",
+        "awards": "TBD"
+      },
+      "smallPoster": "/images/the-fall-guy_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 15,
+      "title": "Despicable Me 4",
+      "genre": "Animation | Comedy",
+      "year": 2024,
+      "duration": 90,
+      "overview": "Gru and his Minions embark on another hilarious adventure, facing new challenges and villains.",
+      "details": {
+        "cast": "Steve Carell, Kristen Wiig, Pierre Coffin",
+        "director": "Chris Renaud",
+        "releaseDate": "July 3, 2024",
+        "awards": "TBD"
+      },
+      "smallPoster": "/images/despicable-me_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 16,
+      "title": "Madame Web",
+      "genre": "Action | Adventure | Sci-Fi",
+      "year": 2024,
+      "duration": 110,
+      "overview": "Explores the origin story of the clairvoyant Madame Web, a pivotal character in the Spider-Man universe.",
+      "details": {
+        "cast": "Dakota Johnson, Sydney Sweeney, Emma Roberts",
+        "director": "S.J. Clarkson",
+        "releaseDate": "February 14, 2024",
+        "awards": "TBD"
+      },
+      "smallPoster": "/images/madame-web_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 17,
+      "title": "The Bikeriders",
+      "genre": "Drama",
+      "year": 2024,
+      "duration": 108,
+      "overview": "The rise of a fictional 1960s Midwestern motorcycle club as seen through the lives of its members.",
+      "details": {
+        "cast": "Tom Hardy, Jodie Comer, Austin Butler",
+        "director": "Jeff Nichols",
+        "releaseDate": "June 21, 2024",
+        "awards": "TBD"
+      },
+      "smallPoster": "/images/bikeriders_small_poster.jpeg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 18,
+      "title": "The Color Purple",
+      "genre": "Drama | Musical",
+      "year": 2024,
+      "duration": 141,
+      "overview": "A bold and vibrant adaptation of the Tony Award-winning Broadway musical, based on Alice Walker's novel, chronicling the struggles and triumphs of Celie, an African American woman in the early 1900s.",
+      "details": {
+        "cast": "Fantasia Barrino, Taraji P. Henson, Danielle Brooks, Colman Domingo",
+        "director": "Blitz Bazawule",
+        "releaseDate": "December 25, 2024",
+        "awards": "TBD"
+      },
+      "smallPoster": "/images/the-color-purple_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     }
   ],
   "tv-shows": [
     {
       "id": 1,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Breaking Bad",
+      "genre": "Crime | Thriller",
+      "year": 2008,
+      "duration": 47,
+      "overview": "A high school chemistry teacher turned methamphetamine producer partners with a former student, leading to a life of crime and moral dilemmas.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Bryan Cranston, Aaron Paul, Anna Gunn, Bob Odenkirk",
+        "director": "Vince Gilligan",
+        "releaseDate": "January 20, 2008",
+        "episodes": "62"
       },
-      "smallPoster": "/images/movie.jpg",
-      "largePoster": "/images/banner.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "smallPoster": "/images/breaking-bad_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 2,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Chernobyl",
+      "genre": "Drama | History",
+      "year": 2019,
+      "duration": 60,
+      "overview": "A dramatization of the 1986 nuclear disaster in Soviet Ukraine, highlighting the events and aftermath.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Jared Harris, Stellan Skarsgård, Emily Watson",
+        "director": "Johan Renck",
+        "releaseDate": "May 6, 2019",
+        "episodes": "5"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/chernobyl_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 3,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "The Wire",
+      "genre": "Crime | Drama",
+      "year": 2002,
+      "duration": 58,
+      "overview": "An exploration of Baltimore's society, focusing on the city's narcotics scene through the eyes of law enforcement and drug dealers.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Dominic West, Lance Reddick, Sonja Sohn, Idris Elba",
+        "director": "David Simon",
+        "releaseDate": "June 2, 2002",
+        "episodes": "60"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/the-wire_small_poster.webp",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 4,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Avatar: The Last Airbender",
+      "genre": "Animation | Adventure",
+      "year": 2005,
+      "duration": 24,
+      "overview": "A young hero must master all four elements to bring peace to a war-torn world.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Zach Tyler Eisen, Mae Whitman, Dante Basco, Jack DeSena",
+        "director": "Michael Dante DiMartino, Bryan Konietzko",
+        "releaseDate": "February 21, 2005",
+        "episodes": "61"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/avatar_small_poster.webp",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 5,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Stranger Things",
+      "genre": "Drama | Fantasy | Horror",
+      "year": 2016,
+      "duration": 50,
+      "overview": "A group of young friends in the 1980s uncover supernatural mysteries, secret government experiments, and a parallel dimension called the Upside Down.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Winona Ryder, David Harbour, Millie Bobby Brown, Finn Wolfhard",
+        "director": "The Duffer Brothers",
+        "releaseDate": "July 15, 2016",
+        "episodes": "34"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/stranger-things_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 6,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Game of Thrones",
+      "genre": "Action | Drama",
+      "year": 2011,
+      "duration": 57,
+      "overview": "Nine noble families wage war against each other in a bid for control over the Seven Kingdoms, while an ancient enemy returns to threaten them all.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Emilia Clarke, Kit Harington, Peter Dinklage, Lena Headey",
+        "director": "David Benioff, D.B. Weiss",
+        "releaseDate": "April 17, 2011",
+        "episodes": "73"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/game-of-thrones_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 7,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
+      "title": "The Walking Dead",
+      "genre": "Drama | Horror",
       "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "duration": 45,
+      "overview": "In a world devastated by a zombie apocalypse, survivors struggle to stay alive while facing both the undead and other desperate humans.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Andrew Lincoln, Norman Reedus, Melissa McBride, Lauren Cohan",
+        "director": "Frank Darabont",
+        "releaseDate": "October 31, 2010",
+        "episodes": "177"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/walking-dead_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 8,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "The Sopranos",
+      "genre": "Crime | Drama",
+      "year": 1999,
+      "duration": 55,
+      "overview": "New Jersey mob boss Tony Soprano struggles to manage his family and criminal organization while seeking therapy for his anxiety and panic attacks.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "James Gandolfini, Edie Falco, Michael Imperioli, Lorraine Bracco",
+        "director": "David Chase",
+        "releaseDate": "January 10, 1999",
+        "episodes": "86"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/the-sopranos_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 9,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "The Simpsons",
+      "genre": "Animation | Comedy",
+      "year": 1989,
+      "duration": 22,
+      "overview": "The satirical adventures of the Simpson family in the fictional town of Springfield, tackling social and cultural issues with humor and wit.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Dan Castellaneta, Nancy Cartwright, Harry Shearer, Julie Kavner",
+        "director": "Matt Groening",
+        "releaseDate": "December 17, 1989",
+        "episodes": "750+"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/the-simpsons_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 10,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Grey's Anatomy",
+      "genre": "Drama | Romance",
+      "year": 2005,
+      "duration": 43,
+      "overview": "A medical drama following the personal and professional lives of doctors at Grey Sloan Memorial Hospital, as they navigate relationships, careers, and life-or-death situations.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Kevin McKidd",
+        "director": "Shonda Rhimes",
+        "releaseDate": "March 27, 2005",
+        "episodes": "420+"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/greys-anatomy_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 11,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "Friends",
+      "genre": "Comedy | Romance",
+      "year": 1994,
+      "duration": 22,
+      "overview": "Follows the lives of six friends in New York City as they navigate relationships, careers, and hilarious everyday situations.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, David Schwimmer",
+        "director": "David Crane, Marta Kauffman",
+        "releaseDate": "September 22, 1994",
+        "episodes": "236"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/friends_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     },
     {
       "id": 12,
-      "title": "Inception",
-      "genre": "Action | Sci-Fi",
-      "year": 2010,
-      "duration": 148,
-      "overview": "Inception is a mind-bending thriller that delves into the world of dreams. Dom Cobb, a skilled thief, is given a chance to have his criminal history erased if he can implant an idea into a target's subconscious.",
+      "title": "The Office (US)",
+      "genre": "Comedy",
+      "year": 2005,
+      "duration": 22,
+      "overview": "A mockumentary-style comedy that follows the daily lives of employees at the Dunder Mifflin Paper Company in Scranton, Pennsylvania.",
       "details": {
-        "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
-        "director": "Christopher Nolan",
-        "releaseDate": "July 16, 2010",
-        "awards": "Academy Award for Best Cinematography, Best Sound Editing, Best Sound Mixing, Best Visual Effects"
+        "cast": "Steve Carell, Rainn Wilson, John Krasinski, Jenna Fischer",
+        "director": "Greg Daniels",
+        "releaseDate": "March 24, 2005",
+        "episodes": "201"
       },
-      "smallPoster": "/images/movie.jpg",
+      "smallPoster": "/images/the_office_small_poster.jpg",
       "largePoster": "/images/Movie4.jpg",
-      "rentPrice": 3.99,
-      "buyPrice": 14.99
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 13,
+      "title": "Orange Is the New Black",
+      "genre": "Comedy | Drama | Crime",
+      "year": 2013,
+      "duration": 59,
+      "overview": "Convicted of a decade-old crime, Piper Chapman navigates life inside a women's federal prison, forming friendships, rivalries, and uncovering the harsh realities of incarceration.",
+      "details": {
+        "cast": "Taylor Schilling, Uzo Aduba, Danielle Brooks, Laura Prepon",
+        "director": "Jenji Kohan",
+        "releaseDate": "July 11, 2013",
+        "episodes": "91"
+      },
+      "smallPoster": "/images/orange_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 14,
+      "title": "Downton Abbey",
+      "genre": "Drama | Historical",
+      "year": 2010,
+      "duration": 50,
+      "overview": "A British historical drama that follows the lives of the aristocratic Crawley family and their servants in the early 20th century, navigating societal changes, romance, and family drama.",
+      "details": {
+        "cast": "Hugh Bonneville, Michelle Dockery, Maggie Smith, Jim Carter",
+        "director": "Julian Fellowes",
+        "releaseDate": "September 26, 2010",
+        "episodes": "52"
+      },
+      "smallPoster": "/images/downton-abbey_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 15,
+      "title": "Ozark",
+      "genre": "Crime | Drama | Thriller",
+      "year": 2017,
+      "duration": 60,
+      "overview": "A financial planner drags his family to the Missouri Ozarks to launder money for a dangerous drug cartel, navigating crime, corruption, and survival.",
+      "details": {
+        "cast": "Jason Bateman, Laura Linney, Julia Garner, Sofia Hublitz",
+        "director": "Bill Dubuque, Mark Williams",
+        "releaseDate": "July 21, 2017",
+        "episodes": "44"
+      },
+      "smallPoster": "/images/ozark_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 16,
+      "title": "You",
+      "genre": "Crime | Drama | Thriller",
+      "year": 2018,
+      "duration": 45,
+      "overview": "A dangerously charming bookstore manager becomes obsessed with the women he loves, using social media and manipulation to insert himself into their lives.",
+      "details": {
+        "cast": "Penn Badgley, Victoria Pedretti, Tati Gabrielle, Charlotte Ritchie",
+        "director": "Greg Berlanti, Sera Gamble",
+        "releaseDate": "September 9, 2018",
+        "episodes": "40"
+      },
+      "smallPoster": "/images/you_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 17,
+      "title": "Top Boy",
+      "genre": "Crime | Drama | Thriller",
+      "year": 2011,
+      "duration": 55,
+      "overview": "Two drug dealers rise through the ranks of the London criminal underworld while navigating dangerous rivalries, police crackdowns, and personal struggles.",
+      "details": {
+        "cast": "Ashley Walters, Kano, Michael Ward, Little Simz",
+        "director": "Ronan Bennett",
+        "releaseDate": "October 31, 2011",
+        "episodes": "32"
+      },
+      "smallPoster": "/images/top-boy_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
+    },
+    {
+      "id": 21,
+      "title": "Bridgerton",
+      "genre": "Drama | Romance | Historical",
+      "year": 2020,
+      "duration": 60,
+      "overview": "Set in Regency-era London, the Bridgerton family navigates high society, romance, and scandal, all under the watchful eye of the mysterious Lady Whistledown.",
+      "details": {
+        "cast": "Phoebe Dynevor, Regé-Jean Page, Jonathan Bailey, Nicola Coughlan",
+        "director": "Chris Van Dusen",
+        "releaseDate": "December 25, 2020",
+        "episodes": "16"
+      },
+      "smallPoster": "/images/bridgerton_small_poster.jpg",
+      "largePoster": "/images/Movie4.jpg",
+      "rentPrice": 5.99,
+      "buyPrice": 19.99
     }
   ]
 }

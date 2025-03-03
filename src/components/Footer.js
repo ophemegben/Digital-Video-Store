@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <Box className="footer">
       <Grid2 container spacing={4} justifyContent="space-evenly">
-        <Grid2 xs={12} sm={3}>
+        <Grid2 size= {{xs:"12", sm:"6", md:"3", lg:"1"}}>
           <Typography variant="h6" gutterBottom>
             Watch
           </Typography>
@@ -21,16 +21,16 @@ const Footer = () => {
           <Link to="/tv" className="footer-link">TV</Link><br />
           <Link to="/free" className="footer-link">Free</Link>
         </Grid2>
-        <Grid2 xs={12} sm={3}>
+        <Grid2 size= {{xs:"12", sm:"6", md:"3", lg:"1"}}>
           <Typography variant="h6" gutterBottom>
             My Account
           </Typography>
-          <Link to="/my-vudu" className="footer-link">My Vudu</Link><br />
+          <Link to="/my-vudu" className="footer-link">My StreamX</Link><br />
           <Link to="/account" className="footer-link">Account</Link><br />
           <Link to="/settings" className="footer-link">Settings</Link><br />
           <Link to="/manage-devices" className="footer-link">Manage Devices</Link>
         </Grid2>
-        <Grid2 xs={12} sm={3}>
+        <Grid2 size= {{xs:"12", sm:"6", md:"3", lg:"1"}}>
           <Typography variant="h6" gutterBottom>
             Features
           </Typography>
@@ -40,7 +40,7 @@ const Footer = () => {
           <Link to="/instawatch" className="footer-link">InstaWatch</Link><br />
           <Link to="/movies-anywhere" className="footer-link">Movies Anywhere</Link>
         </Grid2>
-        <Grid2 xs={12} sm={3}>
+        <Grid2 size= {{xs:"12", sm:"6", md:"3", lg:"1"}}>
           <Typography variant="h6" gutterBottom>
             Help
           </Typography>
