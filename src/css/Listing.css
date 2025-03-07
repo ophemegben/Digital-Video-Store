@@ -21,13 +21,13 @@
     visibility: hidden; /* Initially hidden */
     opacity: 0; /* Initially hidden */
     position: absolute;
-    height: 50px;
+    height: auto;
     bottom: 0; /* Stick to the bottom */
     left: 0;
     width: 100%;
-    background-color:#000000D9; /* Semi-transparent black */
+    background-color: #000000D9; /* Semi-transparent black */
     color: #fff;
-    padding: 10px;
+    padding: 5px !important;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 

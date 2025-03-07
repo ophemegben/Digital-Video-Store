@@ -1,41 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { InputField } from "./InputFields";
 import "../css/Login.css";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Signed in :", { email });
-  };
-
   return (
     <div className="container">
       <div className="formContainer">
         <h1 className="heading">Sign In to StreamX</h1>
 
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className="inputGroup">
-            <InputField
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              name="email"
-            />
+            <InputField type="email" placeholder="Email" name="email" />
           </div>
 
           <div className="inputGroup">
-            <InputField
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              name="password"
-            />
+            <InputField type="password" placeholder="Password" name="password" />
           </div>
 
           <div className="forgotPassword">
@@ -44,7 +24,7 @@ const LoginPage = () => {
             </Link>
           </div>
 
-          <button type="submit" className="signInButton">
+          <button type="button" className="signInButton">
             Sign In
           </button>
 

@@ -1,72 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/Registration.css";
 import { InputField, Checkbox, Button } from "./InputFields";
 
 const RegistrationPage = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-    agreeTerms: false,
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-  };
-
   return (
     <div className="layout">
       <div className="registration-container">
         <h1 className="form-header">Create A New Account</h1>
 
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className="name-row">
             <InputField
               type="text"
               placeholder="First name"
-              value={formData.firstName}
-              onChange={handleInputChange}
               name="firstName"
             />
             <InputField
               type="text"
               placeholder="Last name"
-              value={formData.lastName}
-              onChange={handleInputChange}
               name="lastName"
             />
           </div>
 
-          <InputField
-            type="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleInputChange}
-            name="email"
-          />
+          <InputField type="email" placeholder="Email" name="email" />
 
-          <InputField
-            type="password"
-            placeholder="Password"
-            value={formData.password}
-            onChange={handleInputChange}
-            name="password"
-          />
+          <InputField type="password" placeholder="Password" name="password" />
 
           <Checkbox
             id="terms"
-            checked={formData.agreeTerms}
-            onChange={handleInputChange}
             name="agreeTerms"
             label={
               <span>
@@ -84,27 +45,15 @@ const RegistrationPage = () => {
             }
           />
 
-          <Button
-            text="Sign Up"
-            className="primary-button"
-            type="submit"
-          />
+          <Button text="Sign Up" className="primary-button" />
 
           <div className="separator">
             <span>Or Sign Up with</span>
           </div>
 
           <div className="social-buttons">
-            <Button
-              text="Google"
-              className="google-button"
-              onClick={() => console.log("Google sign up")}
-            />
-            <Button
-              text="Facebook"
-              className="facebook-button"
-              onClick={() => console.log("Facebook sign up")}
-            />
+            <Button text="Google" className="google-button" />
+            <Button text="Facebook" className="facebook-button" />
           </div>
         </form>
       </div>
