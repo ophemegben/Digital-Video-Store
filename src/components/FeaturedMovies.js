@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import Slider from 'react-slick';
 import { Box, Typography, Card, CardMedia, CardActionArea, CardContent } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { MovieContext } from '../context/MovieContext';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css/Home.css";
 
-const FeaturedShows = () => {
-  const [movies, setMovies] = useState([]);
+const FeaturedMovies = () => {
+  const { movies } = useContext(MovieContext);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    fetch('http://localhost:3001/featuredMovies')
-      .then(response => response.json())
-      .then(data => setMovies(data))
-      .catch(error => console.error('Error fetching movies:', error));
-  }, []);
 
   const handleCardClick = (id) => {
     navigate(`/movies/${id}`);
@@ -73,11 +67,11 @@ const FeaturedShows = () => {
             gap: "5px",
             color: "#fff"
           }}>
-          See more <ArrowForwardIosIcon fontSize="small"/>
+          See more <ArrowForwardIosIcon fontSize="small" />
         </Link>
       </Typography>
       <Slider {...settings}>
-        {movies.map(movie => (
+        {movies.slice(0,10).map(movie => (
           <Card key={movie.id} className="movie-card">
             <CardActionArea onClick={() => handleCardClick(movie.id)}>
               <CardMedia
@@ -88,7 +82,7 @@ const FeaturedShows = () => {
               />
               <CardContent className='card-content'>
                 <Typography variant="body2" >
-                  {movie.title} 
+                  {movie.title}
                 </Typography>
                 <Typography variant="body2">
                   {movie.genre} | {movie.year}
@@ -102,4 +96,4 @@ const FeaturedShows = () => {
   );
 };
 
-export default FeaturedShows;
+export default FeaturedMovies;

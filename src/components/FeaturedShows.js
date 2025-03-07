@@ -1,22 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import Slider from 'react-slick';
 import { Box, Typography, Card, CardMedia, CardActionArea, CardContent } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Link, useNavigate } from 'react-router-dom';
+import { MovieContext } from '../context/MovieContext';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css/Home.css";
 
 const FeaturedShows = () => {
-  const [shows, setShows] = useState([]);
+  const { shows } = useContext(MovieContext);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    fetch('http://localhost:3001/featuredShows')
-      .then(response => response.json())
-      .then(data => setShows(data))
-      .catch(error => console.error('Error fetching movies:', error));
-  }, []);
 
   const handleCardClick = (id) => {
     navigate(`/tv-shows/${id}`);
@@ -77,7 +71,7 @@ const FeaturedShows = () => {
         </Link>
       </Typography>
       <Slider {...settings}>
-        {shows.map(show => (
+        {shows.slice(0,10).map(show => (
           <Card key={show.id} className="movie-card">
             <CardActionArea onClick={() => handleCardClick(show.id)}>
               <CardMedia

@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { Typography, Grid2, Card, CardMedia, CardContent, CardActionArea } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { MovieContext } from '../context/MovieContext';
 import "../css/Listing.css";
 
 const ShowListings = () => {
-  const [shows, setShows] = useState([]);
+  const { shows } = useContext(MovieContext);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetch('http://localhost:3001/tv-shows')
-      .then(response => response.json())
-      .then(data => setShows(data))
-      .catch(error => console.error('Error fetching movies:', error));
-  }, []);
 
   const handleCardClick = (id) => {
     navigate(`/tv-shows/${id}`);

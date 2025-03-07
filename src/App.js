@@ -9,26 +9,29 @@ import LoginPage from './components/LoginPage';
 import RegistrationPage from './components/RegistrationPage';
 import NotFound from './components/404';
 import Layout from './components/Layout';
+import MovieContextProvider from './context/MovieContext';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Layout>
-          {/* Define routes*/}
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/movies" element={<MovieListings />} />
-            <Route path="/tv-shows" element={<ShowListings />} />
-            <Route path="/movies/:id" element={<MovieDetailsPage />} />
-            <Route path="/tv-shows/:id" element={<ShowDetailsPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegistrationPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </Router>
+      <MovieContextProvider>
+        <Router>
+          <Layout>
+            {/* Define routes*/}
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/movies" element={<MovieListings />} />
+              <Route path="/tv-shows" element={<ShowListings />} />
+              <Route path="/movies/:id" element={<MovieDetailsPage />} />
+              <Route path="/tv-shows/:id" element={<ShowDetailsPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/register" element={<RegistrationPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </Router>
+      </MovieContextProvider>
     </div>
   );
 }

@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "../css/Home.css";
+import { MovieContext } from '../context/MovieContext';
 
 const CustomNextArrow = (props) => {
   const { onClick } = props;
@@ -25,14 +26,7 @@ const CustomPrevArrow = (props) => {
 };
 
 const Hero = () => {
-  const [banners, setBanners] = useState([]);
-
-  useEffect(() => {
-    fetch('http://localhost:3001/banners') 
-      .then(response => response.json())
-      .then(data => setBanners(data))
-      .catch(error => console.error('Error fetching banners:', error));
-  }, []);
+  const { banners } = useContext(MovieContext);
 
   const settings = {
     dots: false,

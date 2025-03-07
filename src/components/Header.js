@@ -50,7 +50,7 @@ const Header = () => {
               <Button component={Link} to="/tv-shows" sx={navButtonStyle}>TV Shows</Button>
               {!isTablet && (
                 <>
-                  <Button component={Link} to="/my-vudu" sx={navButtonStyle}>Live TV</Button>
+                  <Button component={Link} to="/my-streamx" sx={navButtonStyle}>Live TV</Button>
                   <Button component={Link} to="/free" sx={navButtonStyle}>Subscriptions</Button>
                 </>
               )}
@@ -117,7 +117,7 @@ const Header = () => {
           <MenuItem
             onClick={handleMobileMenuClose}
             component={Link}
-            to="/my-vudu"
+            to="/my-streamx"
           >
             Live TV
           </MenuItem>
