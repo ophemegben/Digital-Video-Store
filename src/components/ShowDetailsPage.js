@@ -29,7 +29,8 @@ const ShowDetailsPage = () => {
             <Box className="large-poster-container">
                 <img src={show.largePoster} alt={show.title} className="large-poster" />
                 <Box className="overlay">
-                    <Card className="small-poster-card">
+                    <Box className="small-poster-card">
+                    <Card>
                         <CardMedia
                             component="img"
                             image={show.smallPoster}
@@ -37,6 +38,7 @@ const ShowDetailsPage = () => {
                             className="small-poster"
                         />
                     </Card>
+                    </Box>
                     <Box className="details-content">
                         <Typography variant="h4" gutterBottom>
                             {show.title}

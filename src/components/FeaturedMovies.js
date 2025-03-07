@@ -87,7 +87,7 @@ const FeaturedShows = () => {
                 className="movie-image"
               />
               <CardContent className='card-content'>
-                <Typography variant="body2">
+                <Typography variant="body2" >
                   {movie.title} 
                 </Typography>
                 <Typography variant="body2">

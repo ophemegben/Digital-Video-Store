@@ -6,7 +6,7 @@
 .large-poster-container {
   position: relative;
   width: 100%;
-  max-height: 650px;
+  height: 550px;
   overflow: hidden;
 }
 
@@ -18,19 +18,21 @@
 
 .overlay {
   position: absolute;
-  top: 15%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
-  padding: 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 50%)
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 50%);
 }
 
 .small-poster-card {
   max-width: 200px;
-  margin-left: 60px;
+  margin-left: 100px;
+  margin-bottom: 20px;
 }
 
 .small-poster {
@@ -60,11 +62,105 @@
   text-transform: none;
   gap: 8px;
   border-radius: 15px;
-  color:black;
+  color: black;
 }
 
 .details-content {
   text-align: left;
-  max-width: 600px;
+  width: 100%;
   margin-left: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+.large-poster-container {
+    min-height: 750px; 
+  }
+
+  .overlay {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .small-poster-card {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .details-content {
+    margin-left: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 85%
+  }
+
+  .buttons button {
+    font-size: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .large-poster-container {
+    min-height: 750px; 
+  }
+  
+  .overlay {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .small-poster-card {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .details-content {
+    margin-left: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 85%
+  }
+
+  .buttons button {
+    font-size: 11px;
+  }
+}
+
+/* Medium devices (landscape tablets, 900px and up) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .overlay {
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+
+  .small-poster-card {
+    margin-left: 70px;
+  }
+
+  .details-content {
+    margin-left: 20px;
+    padding: 15px;
+  }
+
+  .buttons button {
+    font-size: 12px;
+  }
+}
+

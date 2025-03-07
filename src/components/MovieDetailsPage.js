@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Box, Typography, Button, Card, CardMedia, Tabs, Tab, IconButton } from '@mui/material';
+import { Box, Typography, Button, Card, CardMedia, Tabs, Tab } from '@mui/material';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Movie from '@mui/icons-material/Movie';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
@@ -29,7 +29,8 @@ const MovieDetailsPage = () => {
             <Box className="large-poster-container">
                 <img src={movie.largePoster} alt={movie.title} className="large-poster" />
                 <Box className="overlay">
-                    <Card className="small-poster-card">
+                    <Box className="small-poster-card">
+                    <Card>
                         <CardMedia
                             component="img"
                             image={movie.smallPoster}
@@ -37,6 +38,7 @@ const MovieDetailsPage = () => {
                             className="small-poster"
                         />
                     </Card>
+                    </Box>
                     <Box className="details-content">
                         <Typography variant="h4" gutterBottom>
                             {movie.title}
@@ -58,8 +60,8 @@ const MovieDetailsPage = () => {
                         </Box>
 
                         <Tabs value={tabValue} onChange={handleTabChange} textColor="inherit">
-                            <Tab label="Overview" sx={{textTransform: "none"}}/>
-                            <Tab label="Details" sx={{textTransform: "none"}}/>
+                            <Tab label="Overview" sx={{ textTransform: "none" }} />
+                            <Tab label="Details" sx={{ textTransform: "none" }} />
                         </Tabs>
                         {tabValue === 0 && (
                             <Typography variant="body2" gutterBottom>

@@ -72,11 +72,11 @@ const RegistrationPage = () => {
               <span>
                 I certify that I am at least 18 years old and that I agree to
                 the{" "}
-                <a href="#" className="link">
+                <a href="/termsconditions" className="link">
                   Terms and Policies
                 </a>{" "}
                 and{" "}
-                <a href="#" className="link">
+                <a href="/policy" className="link">
                   Privacy Policy
                 </a>
                 .

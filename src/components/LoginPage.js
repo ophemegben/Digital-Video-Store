@@ -48,9 +48,9 @@ const LoginPage = () => {
             Sign In
           </button>
 
-          <button type="button" className="createAccountButton">
+          <Link to="/register" className="createAccountButton" style={{ textDecoration: "none" }}>
             Create a new StreamX account
-          </button>
+          </Link>
 
           <div className="thirdPartyContainer">
             <button type="button" className="walmartButton">

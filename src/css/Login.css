@@ -62,16 +62,19 @@
     }
 
     .createAccountButton {
-      width: 100%;
+      display: inline-block;
+      width: 300px;
       padding: 10px;
       background-color: white;
       color: #0078d7;
       border: 1px solid #0078d7;
       border-radius: 4px;
+      text-align: center;
       cursor: pointer;
       font-size: 14px;
       font-weight: 500;
       margin-bottom: 24px;
+      justify-content: center;
     }
 
     .thirdPartyContainer {

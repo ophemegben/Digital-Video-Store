@@ -23,7 +23,7 @@ const ShowListings = () => {
       <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', margin: '0 auto' }}>TV Shows</Typography>
       <Grid2 container spacing={2} className="movie-listing">
         {shows.map(show => (
-          <Grid2 size={{xs:12, sm:6, md:4, lg:2}} key={show.id}>
+          <Grid2 size={{xs:6, sm:4, md:3, lg:2}} key={show.id}>
             <Card className="listing-card">
               <CardActionArea onClick={() => handleCardClick(show.id)}>
                 <CardMedia
