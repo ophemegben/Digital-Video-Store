@@ -29,7 +29,7 @@ const CustomPrevArrow = (props) => {
 const Hero = () => {
   const { banners, loading } = useContext(MovieContext);
 
-  if (loading) return <Typography className="loading-text">Loading movie details...</Typography>;
+  if (loading) return <Typography className="loading-text">Loading banners...</Typography>;
 
   const settings = {
     dots: false,
