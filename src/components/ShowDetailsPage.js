@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, Typography, Button, Card, CardMedia, Tabs, Tab } from '@mui/material';
+import { MovieContext } from '../context/MovieContext';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Movie from '@mui/icons-material/Movie';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
@@ -8,21 +9,17 @@ import "../css/Details.css";
 
 const ShowDetailsPage = () => {
     const { id } = useParams();
-    const [show, setShow] = useState(null);
+    const { shows, loading } = useContext(MovieContext);
     const [tabValue, setTabValue] = useState(0);
 
-    useEffect(() => {
-        fetch(`http://localhost:3001/tv-shows/${id}`)
-            .then(response => response.json())
-            .then(data => setShow(data))
-            .catch(error => console.error('Error fetching movie details:', error));
-    }, [id]);
+    //Find show with matching id
+    const show = shows.find(show => String(show.id) === id);
 
     const handleTabChange = (event, newValue) => {
         setTabValue(newValue);
     };
 
-    if (!show) return <div>Loading...</div>;
+    if (loading) return <Typography className="loading-text">Loading movie details...</Typography>;
 
     return (
         <Box className="movie-details">
@@ -30,14 +27,14 @@ const ShowDetailsPage = () => {
                 <img src={show.largePoster} alt={show.title} className="large-poster" />
                 <Box className="overlay">
                     <Box className="small-poster-card">
-                    <Card>
-                        <CardMedia
-                            component="img"
-                            image={show.smallPoster}
-                            alt={show.title}
-                            className="small-poster"
-                        />
-                    </Card>
+                        <Card>
+                            <CardMedia
+                                component="img"
+                                image={show.smallPoster}
+                                alt={show.title}
+                                className="small-poster"
+                            />
+                        </Card>
                     </Box>
                     <Box className="details-content">
                         <Typography variant="h4" gutterBottom>
@@ -60,8 +57,8 @@ const ShowDetailsPage = () => {
                         </Box>
 
                         <Tabs value={tabValue} onChange={handleTabChange} textColor="inherit">
-                            <Tab label="Overview" sx={{textTransform: "none"}}/>
-                            <Tab label="Details" sx={{textTransform: "none"}}/>
+                            <Tab label="Overview" sx={{ textTransform: "none" }} />
+                            <Tab label="Details" sx={{ textTransform: "none" }} />
                         </Tabs>
                         {tabValue === 0 && (
                             <Typography variant="body2" gutterBottom>

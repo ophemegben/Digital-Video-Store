@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Typography } from '@mui/material';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -26,7 +27,9 @@ const CustomPrevArrow = (props) => {
 };
 
 const Hero = () => {
-  const { banners } = useContext(MovieContext);
+  const { banners, loading } = useContext(MovieContext);
+
+  if (loading) return <Typography className="loading-text">Loading movie details...</Typography>;
 
   const settings = {
     dots: false,

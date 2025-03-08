@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, Typography, Button, Card, CardMedia, Tabs, Tab } from '@mui/material';
+import { MovieContext } from '../context/MovieContext';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Movie from '@mui/icons-material/Movie';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
@@ -8,21 +9,17 @@ import "../css/Details.css";
 
 const MovieDetailsPage = () => {
     const { id } = useParams();
-    const [movie, setMovie] = useState(null);
+    const { movies, loading } = useContext(MovieContext);
     const [tabValue, setTabValue] = useState(0);
 
-    useEffect(() => {
-        fetch(`http://localhost:3001/movies/${id}`)
-            .then(response => response.json())
-            .then(data => setMovie(data))
-            .catch(error => console.error('Error fetching movie details:', error));
-    }, [id]);
+    //Find movie with matching id
+    const movie = movies.find(movie => String(movie.id) === id);
 
     const handleTabChange = (event, newValue) => {
         setTabValue(newValue);
     };
 
-    if (!movie) return <div>Loading...</div>;
+    if (loading) return <Typography className="loading-text">Loading movie details...</Typography>;
 
     return (
         <Box className="movie-details">
