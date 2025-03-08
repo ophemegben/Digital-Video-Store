@@ -11,7 +11,7 @@ const MovieContextProvider = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const baseURL = "http://localhost:3001";
+        const baseURL = process.env.REACT_APP_API_URL; // Get the base URL from the environment variables
 
         // Fetch banners
         const bannersResponse = await fetch(`${baseURL}/banners`);
