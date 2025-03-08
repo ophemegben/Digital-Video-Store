@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../css/Home.css";
 
 const FeaturedShows = () => {
-  const { shows } = useContext(MovieContext);
+  const { shows, loading } = useContext(MovieContext);
   const navigate = useNavigate();
 
   const handleCardClick = (id) => {
@@ -53,6 +53,10 @@ const FeaturedShows = () => {
       },
     ],
   };
+
+  if (loading) {
+    return <Typography className="loading-text">Loading featured shows...</Typography>;
+  }
 
   return (
     <Box className="featured-movies">

@@ -5,13 +5,17 @@ import { MovieContext } from '../context/MovieContext';
 import "../css/Listing.css";
 
 const ShowListings = () => {
-  const { shows } = useContext(MovieContext);
+  const { shows, loading } = useContext(MovieContext);
   const navigate = useNavigate();
 
 
   const handleCardClick = (id) => {
     navigate(`/tv-shows/${id}`);
   };
+
+  if (loading) {
+    return <Typography className="loading-text">Loading TV shows...</Typography>;
+  }
 
   return (
     <div className='header-custom'>
