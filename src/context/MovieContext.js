@@ -11,40 +11,29 @@ const MovieContextProvider = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const baseURL = process.env.REACT_APP_API_URL; // Get the base URL from the environment variables
-
-        // Fetch banners
-        const bannersResponse = await fetch(`${baseURL}/banners`);
-        if (!bannersResponse.ok) {
-          throw new Error("Failed to fetch banners");
-        }
-        const bannersData = await bannersResponse.json();
+        const baseURL = process.env.REACT_APP_API_URL;
+  
+        // Start all requests simultaneously
+        const [bannersData, moviesData, tvShowsData] = await Promise.all([
+          fetch(`${baseURL}/banners`).then(res => res.json()),
+          fetch(`${baseURL}/movies`).then(res => res.json()),
+          fetch(`${baseURL}/tv-shows`).then(res => res.json()),
+        ]);
+  
+        // Update state once all requests are done
         setBanners(bannersData);
- 
-        // Fetch movies
-        const moviesResponse = await fetch(`${baseURL}/movies`);
-        if (!moviesResponse.ok) {
-          throw new Error("Failed to fetch movies");
-        }
-        const moviesData = await moviesResponse.json();
         setMovies(moviesData);
- 
-        // Fetch TV shows
-        const tvShowsResponse = await fetch(`${baseURL}/tv-shows`);
-        if (!tvShowsResponse.ok) {
-          throw new Error("Failed to fetch TV shows");
-        }
-        const tvShowsData = await tvShowsResponse.json();
         setShows(tvShowsData);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
-        setLoading(false); // Set loading to false after data is fetched (or if an error occurs)
+        setLoading(false);
       }
     };
- 
-    fetchData(); // Call the fetchData function
+  
+    fetchData();
   }, []);
+  
  
   return (
     <MovieContext.Provider value={{ banners, movies, shows, loading }}>
