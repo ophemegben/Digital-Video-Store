@@ -10,11 +10,11 @@ const LoginPage = () => {
         <h1 className="heading">Sign In to StreamX</h1>
 
         <form>
-          <div className="inputGroup">
+          <div>
             <InputField type="email" placeholder="Email" name="email" />
           </div>
 
-          <div className="inputGroup">
+          <div>
             <InputField type="password" placeholder="Password" name="password" />
           </div>
 
