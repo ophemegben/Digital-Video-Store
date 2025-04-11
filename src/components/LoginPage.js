@@ -1,15 +1,54 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { InputField } from "./InputFields";
+import { useNavigate } from "react-router-dom";
 import "../css/Login.css";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+
+    const formData = {
+      email: form.email.value,
+      password: form.password.value,
+    };
+
+    try {
+      const baseURL = process.env.REACT_APP_API_URL;
+      const res = await fetch(`${baseURL}/users/login`, {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+      if (res.ok) {
+        const expiresAt = new Date().getTime() + 30 * 60 * 1000; // Set expiration time for 30 minutes
+        const userWithExpiry = { ...result.user, expiresAt };
+        localStorage.setItem("user", JSON.stringify(userWithExpiry)); // Store user data in local storage
+        form.reset();
+        navigate("/dashboard"); // Redirect to dashboard on success
+      } else {
+        alert("Login failed. Please check your credentials.");
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+      alert("An error occurred. Please try again later.");
+    }
+  }
+
   return (
     <div className="container">
       <div className="formContainer">
         <h1 className="heading">Sign In to StreamX</h1>
 
-        <form>
+        <form onSubmit={handleLogin}>
           <div>
             <InputField type="email" placeholder="Email" name="email" />
           </div>
@@ -24,7 +63,7 @@ const LoginPage = () => {
             </Link>
           </div>
 
-          <button type="button" className="signInButton">
+          <button type="submit" className="signInButton">
             Sign In
           </button>
 

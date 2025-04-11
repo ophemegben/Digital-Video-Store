@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../css/Home.css";
 
 const FeaturedMovies = () => {
-  const { movies, loading } = useContext(MovieContext);
+  const { featuredMovies, loading } = useContext(MovieContext);
   const navigate = useNavigate();
 
   const handleCardClick = (id) => {
@@ -23,35 +23,11 @@ const FeaturedMovies = () => {
     slidesToShow: 6,
     slidesToScroll: 3,
     responsive: [
-      {
-        breakpoint: 1200, // Large screens
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 900, // Medium screens
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 600, // Small screens
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480, // Extra small screens
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+      { breakpoint: 1200, settings: { slidesToShow: 5, slidesToScroll: 3 } }, // Large screens
+      { breakpoint: 900, settings: { slidesToShow: 4, slidesToScroll: 2 } },// Medium screens
+      { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 1 } }, // Small screens
+      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }, // Extra small screens
+    ]
   };
 
   if (loading) {
@@ -75,7 +51,7 @@ const FeaturedMovies = () => {
         </Link>
       </Typography>
       <Slider {...settings}>
-        {movies.slice(0,10).map(movie => (
+        {featuredMovies.slice(0, 10).map(movie => (
           <Card key={movie.id} className="movie-card">
             <CardActionArea onClick={() => handleCardClick(movie.id)}>
               <CardMedia
@@ -89,7 +65,7 @@ const FeaturedMovies = () => {
                   {movie.title}
                 </Typography>
                 <Typography variant="body2">
-                  {movie.genre} | {movie.year}
+                  {movie.genre} | {movie.releaseYear}
                 </Typography>
               </CardContent>
             </CardActionArea>

@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../css/Home.css";
 
 const FeaturedShows = () => {
-  const { shows, loading } = useContext(MovieContext);
+  const { featuredTVShows, loading } = useContext(MovieContext);
   const navigate = useNavigate();
 
   const handleCardClick = (id) => {
@@ -23,35 +23,11 @@ const FeaturedShows = () => {
     slidesToShow: 6,
     slidesToScroll: 3,
     responsive: [
-      {
-        breakpoint: 1200, // Large screens
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 900, // Medium screens
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 600, // Small screens
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480, // Extra small screens
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+      { breakpoint: 1200, settings: { slidesToShow: 5, slidesToScroll: 3 } }, // Large screens
+      { breakpoint: 900, settings: { slidesToShow: 4, slidesToScroll: 2 } },// Medium screens
+      { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 1 } }, // Small screens
+      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } }, // Extra small screens
+    ]
   };
 
   if (loading) {
@@ -71,11 +47,11 @@ const FeaturedShows = () => {
             gap: "5px",
             color: "#fff"
           }}>
-          See more <ArrowForwardIosIcon fontSize="small"/>
+          See more <ArrowForwardIosIcon fontSize="small" />
         </Link>
       </Typography>
       <Slider {...settings}>
-        {shows.slice(0,10).map(show => (
+        {featuredTVShows.slice(0, 10).map(show => (
           <Card key={show.id} className="movie-card">
             <CardActionArea onClick={() => handleCardClick(show.id)}>
               <CardMedia
@@ -86,12 +62,12 @@ const FeaturedShows = () => {
               />
               <CardContent className='card-content'>
                 <Typography variant="body2">
-                  {show.title} 
+                  {show.title}
                 </Typography>
                 <Typography variant="body2">
-                  {show.genre} | {show.year}
+                  {show.genre} | {show.releaseYear}
                 </Typography>
-              </CardContent>              
+              </CardContent>
             </CardActionArea>
           </Card>
         ))}

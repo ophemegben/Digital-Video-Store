@@ -3,8 +3,9 @@ import React, { createContext, useEffect, useState } from "react";
 export const MovieContext = createContext();
  
 const MovieContextProvider = ({ children }) => {
-  const [banners, setBanners] = useState([]);
   const [movies, setMovies] = useState([]);
+  const [featuredMovies, setFeaturedMovies] = useState([]);
+  const [featuredTVShows, setFeaturedTVShows] = useState([]);
   const [shows, setShows] = useState([]);
   const [loading, setLoading] = useState(true); // Add loading state
  
@@ -14,16 +15,18 @@ const MovieContextProvider = ({ children }) => {
         const baseURL = process.env.REACT_APP_API_URL;
   
         // Start all requests simultaneously
-        const [bannersData, moviesData, tvShowsData] = await Promise.all([
-          fetch(`${baseURL}/banners`).then(res => res.json()),
+        const [ moviesData, featuredMoviesData, tvShowsData, featuredTVShowsData ] = await Promise.all([
           fetch(`${baseURL}/movies`).then(res => res.json()),
-          fetch(`${baseURL}/tv-shows`).then(res => res.json()),
+          fetch(`${baseURL}/movies/featured`).then(res => res.json()),
+          fetch(`${baseURL}/tvshows`).then(res => res.json()),
+          fetch(`${baseURL}/tvshows/featured`).then(res => res.json()),
         ]);
   
         // Update state once all requests are done
-        setBanners(bannersData);
         setMovies(moviesData);
         setShows(tvShowsData);
+        setFeaturedMovies(featuredMoviesData);
+        setFeaturedTVShows(featuredTVShowsData);
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -36,7 +39,7 @@ const MovieContextProvider = ({ children }) => {
   
  
   return (
-    <MovieContext.Provider value={{ banners, movies, shows, loading }}>
+    <MovieContext.Provider value={{ movies, featuredMovies, shows, featuredTVShows, loading }}>
       {children}
     </MovieContext.Provider>
   );

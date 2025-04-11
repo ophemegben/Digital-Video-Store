@@ -41,7 +41,7 @@ const MovieDetailsPage = () => {
                             {movie.title}
                         </Typography>
                         <Typography variant="body1" gutterBottom>
-                            {movie.genre} | {movie.year}
+                            {movie.genre} | {movie.releaseYear}
                         </Typography>
 
                         <Box className="play-trailer-buttons">
@@ -68,16 +68,16 @@ const MovieDetailsPage = () => {
                         {tabValue === 1 && (
                             <Box>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Cast:</strong> {movie.details.cast}
+                                    <strong>Cast:</strong> {movie.cast}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Director:</strong> {movie.details.director}
+                                    <strong>Director:</strong> {movie.director}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Release Date:</strong> {movie.details.releaseDate}
+                                    <strong>Release Date:</strong> {movie.releaseDate}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Awards:</strong> {movie.details.awards}
+                                    <strong>Awards:</strong> {movie.awards}
                                 </Typography>
                             </Box>
                         )}

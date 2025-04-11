@@ -41,7 +41,7 @@ const ShowDetailsPage = () => {
                             {show.title}
                         </Typography>
                         <Typography variant="body1" gutterBottom>
-                            {show.genre} | {show.year}
+                            {show.genre} | {show.releaseYear}
                         </Typography>
 
                         <Box className="play-trailer-buttons">
@@ -68,16 +68,16 @@ const ShowDetailsPage = () => {
                         {tabValue === 1 && (
                             <Box>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Cast:</strong> {show.details.cast}
+                                    <strong>Cast:</strong> {show.cast}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Director:</strong> {show.details.director}
+                                    <strong>Director:</strong> {show.director}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Release Date:</strong> {show.details.releaseDate}
+                                    <strong>Release Date:</strong> {show.releaseDate}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
-                                    <strong>Episodes:</strong> {show.details.episodes}
+                                    <strong>Episodes:</strong> {show.episodes}
                                 </Typography>
                             </Box>
                         )}

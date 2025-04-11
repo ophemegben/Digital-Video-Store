@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
-import { Typography } from '@mui/material';
+import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import banners from './Banners';
 import "../css/Home.css";
-import { MovieContext } from '../context/MovieContext';
 
 const CustomNextArrow = (props) => {
   const { onClick } = props;
@@ -27,10 +26,6 @@ const CustomPrevArrow = (props) => {
 };
 
 const Hero = () => {
-  const { banners, loading } = useContext(MovieContext);
-
-  if (loading) return <Typography className="loading-text">Loading banners...</Typography>;
-
   const settings = {
     dots: false,
     infinite: true,

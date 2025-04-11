@@ -7,6 +7,8 @@ import MovieListings from './components/MovieListings';
 import ShowListings from './components/ShowListings';
 import LoginPage from './components/LoginPage';
 import RegistrationPage from './components/RegistrationPage';
+import PrivateRoute from './components/PrivateRoute';
+import Dashboard from './components/Dashboard';
 import NotFound from './components/404';
 import Layout from './components/Layout';
 import MovieContextProvider from './context/MovieContext';
@@ -28,6 +30,7 @@ function App() {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/register" element={<RegistrationPage />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
             </Routes>
           </Layout>
         </Router>
