@@ -50,6 +50,7 @@ const MovieListings = () => {
         <TextField
           variant="outlined"
           label="Search for movies"
+          size='small'
           value={searchTerm}
           onChange={handleSearch}
           InputProps={{

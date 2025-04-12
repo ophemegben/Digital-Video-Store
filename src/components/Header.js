@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Menu, MenuItem } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -66,11 +65,6 @@ const Header = () => {
               <Button component={Link} to="/login" sx={navButtonStyle}>Sign In</Button>
             </>
           )}
-
-          <IconButton sx={{ color: "white" }}>
-            <SearchIcon />
-          </IconButton>
-
 
           {/* Mobile menu icon */}
           {isMobile && (

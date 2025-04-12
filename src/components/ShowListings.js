@@ -50,6 +50,7 @@ const ShowListings = () => {
         <TextField
           variant="outlined"
           label="Search for TV shows"
+          size='small'
           value={searchTerm}
           onChange={handleSearch}
           InputProps={{
